@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="./CSS/reset.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="icon" href="./IMG/icone.png" />
+
+  <title>Login | Codelândia</title>
+</head>
+
+<body>
+  <main>
+    <div class="main-container">
+      <div class="container-one">
+        <img class="image" src="./IMG/image.svg" alt="BG" />
+      </div>
+
+      <div class="container-two">
+        <div>
+          <div class="text">
+            <h2>Bem vindo de volta</h2>
+            <h1>Faça login na sua conta</h1>
+          </div>
+
+          <form class="container-form">
+            <div>
+              <div>
+                <p>E-mail</p>
+                <input class="input" type="email" placeholder="codelandia@gmail.com" />
+              </div>
+              <div>
+                <p>Senha</p>
+                <input class="input" type="password" placeholder="********" />
+              </div>
+            </div>
+            <div class="input-radio">
+              <div class="input-remember">
+                <input type="radio" name="lembrar">
+                <p>Lembre de mim</p>
+              </div>
+              <div class="link">
+                <a href="">Esqueceu sua senha?</a>
+              </div>
+            </div>
+          </form>
+          <div>
+            <button type="submit" class="button-entrar">Entrar</button>
+          </div>
+          <div>
+            <a class="button-google target=" target="_blank" href="https://www.google.com/"><span><img
+                  class="google-img" src="./IMG/google.png" alt="Google"></span>Ou faça login com o Google</a>
+          </div>
+        </div>
+        <div class="container-end">
+          <div class="notaccont">
+            <p>Não tem uma conta?</p>
+          </div>
+          <div>
+            <a href="https://www.google.com/" target="_blank">Cadastre-se</a>
+          </div>
+        </div>
+  </main>
+
+  <footer>
+    <div class="rodape">
+      <a href="https://www.linkedin.com/in/bruno-milano-779630173/" target="_blank">
+        <img class="linkedin" src="./IMG/linkedin.png" alt="linkedin">
+      </a>
+      <a href="https://www.instagram.com/milanobrn/" target="_blank">
+        <img class="instagram" src="./IMG/instagram.webp" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/bruno.milano.566/" target="_blank">
+        <img class="facebook" src="./IMG/facebook.png" alt="Facebook">
+      </a>
+    </div>
+    <p>&copy; Todos os direitos reservados - Bruno Milano</p>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    const sr = ScrollReveal({
+      origin: 'top',
+      distance: '50px',
+      duration: 1000,
+      reset: true
+    });
+    ScrollReveal().reveal('.container-one', { delay: 200 });
+    ScrollReveal().reveal('.container-two', { delay: 200 });
+    ScrollReveal().reveal('.rodape', { delay: 500 });
+  </script>
+</body>
+
+</html>

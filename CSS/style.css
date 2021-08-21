@@ -1,0 +1,251 @@
+/*Variáveis*/
+
+:root {
+  --green: #04c35c;
+  --blue: #2b6cb0;
+  --white: #ffffff;
+  --white300: #f7fafc;
+  --dark: #1a202c;
+  --input: #e8e8e8;
+}
+
+body {
+  font-family: 'Merriweather' !important;
+}
+
+.main-container {
+  display: flex;
+  height: 88vh;
+  flex-wrap: wrap;
+}
+
+.image {
+  height: 370px;
+}
+
+.container-one {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--white300);
+}
+
+.container-two {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text {
+  padding: 10px 0;
+}
+
+.text h2 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.text h1 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 45px;
+  margin-bottom: 14px;
+}
+
+.container-form {
+  display: grid;
+  line-height: 40px;
+  padding: 10px 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.input {
+  padding: 15px;
+  width: 100%;
+  border-radius: 5px;
+  text-align: left;
+  border: 1px solid #E5E5E5;
+}
+
+.input::placeholder {
+  color: var(--dark);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.input-radio {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  margin: 7px 0;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+.input-remember {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.input-remember input {
+  margin-right: 12px;
+}
+
+.link {
+  margin: 0 0 0 85px;
+}
+
+.link a {
+  text-decoration: none;
+  font-style: normal;
+  color: inherit;
+}
+
+.button-entrar {
+  width: 100%;
+  padding: 16px;
+  background-color: var(--green);
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  margin-bottom: 32px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  transition: all 0.2s ease-out;
+}
+
+.button-entrar:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.button-google {
+  width: 100%;
+  padding: 15px 63px;
+  background-color: var(--dark);
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  transition: all 0.2s ease-out;
+}
+
+.button-google:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.google-img {
+  height: 20px;
+  margin-right: 5px;
+}
+
+.container-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.container-end a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.notaccont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6px;
+  text-decoration: none;
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0 15px 0;
+  background: linear-gradient(90deg, rgba(247, 250, 252) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.rodape>*:not(:first-child) {
+  margin-left: 10px;
+}
+
+.linkedin {
+  width: 50px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+.linkedin:hover {
+  transform: scale(1.2);
+}
+
+.instagram {
+  width: 50px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+.instagram:hover {
+  transform: scale(1.2);
+}
+
+.facebook {
+  width: 50px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+.facebook:hover {
+  transform: scale(1.2);
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(247, 250, 252) 0%, rgba(255, 255, 255, 1) 100%);
+  padding: 0 0 15px;
+  color: var(--black);
+}
+
+@media screen and (max-width: 1080px) {
+  .main-container {
+    display: grid;
+  }
+  .container-one, .container-two {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+  }
+  .image {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image {
+    height: 250px;
+  }
+  .button-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+  }
+  .rodape {
+    display: flex;
+    align-items: flex-end;
+  }
+}
